@@ -1,0 +1,57 @@
+.login-bg {
+  flex: 1 0 auto;
+  min-height: 0;
+  width: 100vw;
+  background: url('../../../assets/imglogin.png') no-repeat center -215px;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-card-custom {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+.login-card-custom:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+}
+
+
+.login-card-custom input.form-control:focus {
+  box-shadow: 0 0 6px 1px #148974;
+
+}
+
+#registroModal input.form-control {
+  border: 1px solid #148974;
+}
+
+
+#registroModal input.form-control:focus {
+  box-shadow: 0 0 6px 1px #148974;
+
+}
+
+.text-c {
+  color: #148974; 
+}
+
+.btn-c{
+    background-color: #148974;
+    color: white;
+}
+
+@media (max-width: 600px) {
+  .login-bg {
+    background: url('../../../assets/imglogin2.png') no-repeat center top;
+    background-size: cover;
+  }
+}

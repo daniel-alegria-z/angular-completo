@@ -1,0 +1,46 @@
+<div class="login-bg">
+    <div class="login-page d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <div class="login-card-custom p-4 shadow">
+            <h2 class="fw-bold text-c text-center mb-4">Iniciar Sesión</h2>
+            <form (ngSubmit)="onSubmit()" style="width: 100%; max-width: 350px;">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nombre de Usuario" [(ngModel)]="username"
+                        name="username" required />
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password"
+                        name="password" required />
+                </div>
+                <button type="submit" class="btn btn-c w-100">Entrar</button>
+                <div class="text-center mt-3">
+                    <span style="color: #000;">¿No tiene su cuenta? </span>
+                    <button type="button" class="btn btn-link p-0" style="color: #148974; margin-top:-5px" data-bs-toggle="modal" data-bs-target="#registroModal">
+                        Regístrese
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de registro -->
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-c fw-bold" id="registroModalLabel">Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Aquí va tu formulario de registro -->
+                    <input type="text" class="form-control mb-2" placeholder="Nombre de Usuario" />
+                    <input type="email" class="form-control mb-2" placeholder="Correo electrónico" />
+                    <input type="password" class="form-control mb-2" placeholder="Contraseña" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-c">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
