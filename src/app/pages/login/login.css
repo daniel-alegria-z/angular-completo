@@ -10,7 +10,7 @@
 }
 
 .login-card-custom {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.69);
   border-radius: 16px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.12);
   max-width: 380px;
@@ -27,17 +27,33 @@
 
 .login-card-custom input.form-control:focus {
   box-shadow: 0 0 6px 1px #148974;
-
 }
 
 #registroModal input.form-control {
   border: 1px solid #148974;
 }
 
+#registroModal .input-group-text {
+  border: 1px solid #148974;
+}
+
+.login-card-custom .input-group-text {
+  transition: box-shadow 0.25s;
+}
+
+.login-card-custom input.form-control:hover + .input-group-text,
+.login-card-custom input.form-control:focus + .input-group-text {
+  box-shadow: 0 0 6px 1px #148974;
+}
 
 #registroModal input.form-control:focus {
   box-shadow: 0 0 6px 1px #148974;
 
+}
+
+#registroModal input.form-control:hover + .input-group-text,
+#registroModal input.form-control:focus + .input-group-text {
+  box-shadow: 0 0 6px 1px #148974;
 }
 
 .text-c {

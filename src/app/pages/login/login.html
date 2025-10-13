@@ -4,17 +4,28 @@
             <h2 class="fw-bold text-c text-center mb-4">Iniciar Sesión</h2>
             <form (ngSubmit)="onSubmit()" style="width: 100%; max-width: 350px;">
                 <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nombre de Usuario" [(ngModel)]="username"
-                        name="username" required />
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Nombre de Usuario" [(ngModel)]="username"
+                            name="username" required />
+                        <span class="input-group-text bg-white border-start-0">
+                            <i class="bi bi-person"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password"
-                        name="password" required />
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password"
+                            name="password" required />
+                        <span class="input-group-text bg-white border-start-0">
+                            <i class="bi bi-lock"></i>
+                        </span>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-c w-100">Entrar</button>
                 <div class="text-center mt-3">
                     <span style="color: #000;">¿No tiene su cuenta? </span>
-                    <button type="button" class="btn btn-link p-0" style="color: #148974; margin-top:-5px" data-bs-toggle="modal" data-bs-target="#registroModal">
+                    <button type="button" class="btn btn-link p-0" style="color: #148974; margin-top:-5px"
+                        data-bs-toggle="modal" data-bs-target="#registroModal">
                         Regístrese
                     </button>
                 </div>
@@ -31,10 +42,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Formulario de registro -->
-                    <input type="text" class="form-control mb-2" placeholder="Nombre de Usuario" />
-                    <input type="email" class="form-control mb-2" placeholder="Correo electrónico" />
-                    <input type="password" class="form-control mb-2" placeholder="Contraseña" />
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" placeholder="Nombre de Usuario" />
+                        <span class="input-group-text bg-white border-start-0">
+                            <i class="bi bi-person"></i>
+                        </span>
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="email" class="form-control" placeholder="Correo electrónico" />
+                        <span class="input-group-text bg-white border-start-0">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                    </div>
+                    <div class="input-group mb-2">
+                        <input type="password" class="form-control" placeholder="Contraseña" />
+                        <span class="input-group-text bg-white border-start-0">
+                            <i class="bi bi-lock"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
