@@ -1,8 +1,24 @@
 .navbar {
-  border-bottom: 3px solid #dee2e6;
-  background-color: #148974;
+  background-color: #FAF6EE;
+  border-bottom: 5px solid #C49A6C;
 }
 
-.text-c {
-  color: white; 
+.navbar-brand {
+  color: #115E59;
+  font-weight: 700;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #0d3c2f;
+}
+
+.nav-link {
+  color: #115E59;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #148974;
 }

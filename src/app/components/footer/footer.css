@@ -1,9 +1,17 @@
 footer {
-  font-size: 0.9rem;
-  border-top: 3px solid #dee2e6;
+  background-color: #115E59;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.footer-custom {
-  background-color: #148974;
-  border-top: 3px solid #dee2e6;
+footer i {
+  color: #C49A6C;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+footer i:hover {
+  color: white;
 }
