@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './inicio.css'
 })
 export class Inicio {
-
+  videoSrc = 'assets/vids/fondo.mp4';
 }
