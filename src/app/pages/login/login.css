@@ -2,15 +2,16 @@
   flex: 1 0 auto;
   min-height: 0;
   width: 100vw;
-  background: url('../../../assets/imgs/imglogin.png') no-repeat center -215px;
+  background: url('/imgs/fondo.png') no-repeat center -185px;
   background-size: 100% auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #FFF6E7;
 }
 
 .login-card-custom {
-  background: rgba(250, 246, 238, 0.69);
+  background: rgba(250, 246, 238, 0.79);
   border-radius: 16px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.12);
   max-width: 380px;
@@ -67,7 +68,7 @@
 
 @media (max-width: 600px) {
   .login-bg {
-    background: url('../../../assets/imgs/imglogin2.png') no-repeat center top;
+    background: url('/imgs/fondo2.png') no-repeat center top;
     background-size: cover;
   }
 }

@@ -20,7 +20,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-image: url('../../../assets/imgs/imglogin.png'); Imagen de respaldo si el video no carga */
   background-size: cover;
   background-position: center;
 }
@@ -141,13 +140,13 @@ h2 {
 }
 
 .tarjeta-equipo.medico-general .foto-equipo {
-  background-image: url('../../../assets/imgs/medico.png');
+  background-image: url('/imgs/medico.png');
 }
 .tarjeta-equipo.pediatra .foto-equipo {
-  background-image: url('../../../assets/imgs/pediatra.png');
+  background-image: url('/imgs/pediatra.png');
 }
 .tarjeta-equipo.cardiologo .foto-equipo {
-  background-image: url('../../../assets/imgs/cardiologo.png');
+  background-image: url('/imgs/cardiologo.png');
 }
 
 .foto-equipo {
