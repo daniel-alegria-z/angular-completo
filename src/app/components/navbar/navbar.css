@@ -8,6 +8,11 @@
   font-weight: 700;
 }
 
+.navbar-brand img {
+    height: 48px;
+    margin-right: -12px;
+}
+
 .navbar-brand:hover,
 .navbar-brand:focus {
   color: #0d3c2f;
